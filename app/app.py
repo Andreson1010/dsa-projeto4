@@ -40,7 +40,7 @@ def predict():
     prediction = dsa_inferencia(data)
     
     # Renderiza a página com o resultado da previsão
-    return render_template('index.html', prediction_text=f'Valor Previsto da Casa: ${prediction:,.2f}')
+    return render_template('index.html', prediction_text=f'Valor Previsto do Imóvel: ${prediction:,.2f}')
 
 # Executa a aplicação Flask no modo debug se o script for executado diretamente
 if __name__ == '__main__':
